@@ -1,3 +1,4 @@
+
 # Welcome to Car Store API Project!
 
 This project was implemented in order to demonstrate how to build rest APIs using Spring Boot.  The project structure was generated using [Spring Initilizr](https://start.spring.io/)
@@ -14,7 +15,7 @@ I also implemented a front end project in order to show how to consume the APIs:
 All project dependencies are managed by Maven. Besides maven dependencies, you will need the following:
 
  - JDK 11
- - Any Web Server compatible with Java 11. I recommend Tomcat 9. You can download Tomcat from this link: [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
+ - In order to deploy the application to a server you will need any web server compatible with Java 11. I recommend Tomcat 9. You can download Tomcat from this link: [https://tomcat.apache.org/download-90.cgi](https://tomcat.apache.org/download-90.cgi)
 
 # Available APIs
 All APIs use JSON format as the communication pattern to send and receive information
@@ -26,3 +27,8 @@ All APIs use JSON format as the communication pattern to send and receive inform
  - `PUT /veiculos` - Updates car attributes 
  - `PATH /veiculos/{id}` - Updates some car attributes 
  - `DELETE /veiculos/{id}`- Deletes a specific car
+ 
+# Testing the application
+As we are testing a Maven project, you can run the application by using:
+
+    ./mvnw spring-boot:run
